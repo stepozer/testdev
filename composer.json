@@ -35,7 +35,7 @@
             "yii\\composer\\Installer::postCreateProject"
         ],
         "post-install-cmd": [
-            "mkdir web/assets"
+            "mkdir web/assets",
             "chmod 777 web/assets"
         ]
     },
