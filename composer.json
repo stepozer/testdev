@@ -18,14 +18,15 @@
         "yiisoft/yii2": ">=2.0.5",
         "yiisoft/yii2-bootstrap": "*",
         "yiisoft/yii2-swiftmailer": "*",
-        "alrik11es/cowsayphp": "^1.0"
+        "alrik11es/cowsayphp": "^1.0",
+        "fxp/composer-asset-plugin": "^1.2"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",
         "yiisoft/yii2-debug": "*",
         "yiisoft/yii2-gii": "*",
         "yiisoft/yii2-faker": "*",
-	"heroku/heroku-buildpack-php": "*"
+        "heroku/heroku-buildpack-php": "*"
     },
     "config": {
         "process-timeout": 1800
@@ -35,7 +36,7 @@
             "yii\\composer\\Installer::postCreateProject"
         ],
         "post-install-cmd": [
-            "mkdir web/assets",
+            "mkdir -p web/assets",
             "chmod 777 web/assets"
         ]
     },
