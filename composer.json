@@ -36,6 +36,7 @@
         ],
         "post-install-cmd": [
             "mkdir web/assets"
+            "chmod 777 web/assets"
         ]
     },
     "extra": {
