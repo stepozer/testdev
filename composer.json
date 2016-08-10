@@ -33,6 +33,9 @@
     "scripts": {
         "post-create-project-cmd": [
             "yii\\composer\\Installer::postCreateProject"
+        ],
+        "post-install-cmd": [
+            "mkdir app/web/assets"
         ]
     },
     "extra": {
@@ -51,12 +54,6 @@
         "asset-installer-paths": {
             "npm-asset-library": "vendor/npm",
             "bower-asset-library": "vendor/bower"
-        },
-        "heroku": {
-            "compile": [
-                "mkdir /app/web/assets",
-                "chmod 777 /app/web/assets"
-            ]
         }
     }
 }
