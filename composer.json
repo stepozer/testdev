@@ -54,6 +54,7 @@
         },
         "heroku": {
             "compile": [
+                "mkdir /app/web/assets",
                 "chmod 777 /app/web/assets",
             ]
         }
