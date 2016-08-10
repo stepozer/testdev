@@ -35,7 +35,7 @@
             "yii\\composer\\Installer::postCreateProject"
         ],
         "post-install-cmd": [
-            "mkdir app/web/assets"
+            "mkdir web/assets"
         ]
     },
     "extra": {
